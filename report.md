@@ -165,17 +165,17 @@ After seen such results, all the ChatGPT answers need to be put in perspective: 
 
 **ANSWER:**
 
-	The best results achieved on the CISI collection using various information retrieval methods are reported in the literature. Here are some examples of the best results achieved on the CISI collection:
+|The best results achieved on the CISI collection using various information retrieval methods are reported in the literature. Here are some examples of the best results achieved on the CISI collection:
 
-	* In a 1973 study by Harman and others, the best result on the CISI test set was achieved using a combination of query expansion and relevance feedback, with a mean average precision (MAP) of 0.365. MAP is a standard evaluation metric for information retrieval that measures the average precision across all queries in the test set.
+|* In a 1973 study by Harman and others, the best result on the CISI test set was achieved using a combination of query expansion and relevance feedback, with a mean average precision (MAP) of 0.365. MAP is a standard evaluation metric for information retrieval that measures the average precision across all queries in the test set.
 
-	* In a 1994 study by Robertson and others, the best result on the CISI test set was achieved using a combination of statistical and linguistic techniques, with a MAP of 0.478.
+|* In a 1994 study by Robertson and others, the best result on the CISI test set was achieved using a combination of statistical and linguistic techniques, with a MAP of 0.478.
 
-	* In a 1995 study by Turtle and Croft, the best result on the CISI test set was achieved using a language modeling approach, with a MAP of 0.537.
+|* In a 1995 study by Turtle and Croft, the best result on the CISI test set was achieved using a language modeling approach, with a MAP of 0.537.
 
-	* In a 2004 study by Zhai and Lafferty, the best result on the CISI test set was achieved using a variant of the language modeling approach called Dirichlet smoothed language modeling, with a MAP of 0.556.
+|* In a 2004 study by Zhai and Lafferty, the best result on the CISI test set was achieved using a variant of the language modeling approach called Dirichlet smoothed language modeling, with a MAP of 0.556.
 
-	It's worth noting that these results were achieved using different experimental setups and evaluation metrics, so they may not be directly comparable. Additionally, these results were reported in the literature several years ago and may no longer be the state of the art on the CISI collection. However, they provide some context for the performance that can be achieved on the CISI collection using different information retrieval techniques.
+|It's worth noting that these results were achieved using different experimental setups and evaluation metrics, so they may not be directly comparable. Additionally, these results were reported in the literature several years ago and may no longer be the state of the art on the CISI collection. However, they provide some context for the performance that can be achieved on the CISI collection using different information retrieval techniques.
 
 
 Do those reference really exists? If so, do they reach the exactly performance mentioned?
