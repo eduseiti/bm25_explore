@@ -69,36 +69,33 @@ Some examples of what can be considered successful examples of ChatGPT interacti
 
 **ANSWER:**
 
-```
-The CISI (Computer and Information Science Index) collection is a bibliographic database that contains references to articles, conference proceedings, and other documents in the field of computer science and information science. This collection can be used in a number of ways:
+	The CISI (Computer and Information Science Index) collection is a bibliographic database that contains references to articles, conference proceedings, and other documents in the field of computer science and information science. This collection can be used in a number of ways:
 
-1. Literature reviews: Researchers can use the CISI collection to identify relevant articles and other publications on a particular topic, allowing them to conduct a comprehensive literature review.
+	1. Literature reviews: Researchers can use the CISI collection to identify relevant articles and other publications on a particular topic, allowing them to conduct a comprehensive literature review.
 
-2. Information retrieval research: The CISI collection has been widely used in information retrieval research, as it provides a large and diverse set of documents for testing and evaluating search algorithms and techniques.
+	2. Information retrieval research: The CISI collection has been widely used in information retrieval research, as it provides a large and diverse set of documents for testing and evaluating search algorithms and techniques.
 
-3. Education: Students and educators in computer science and information science can use the CISI collection to learn about the history and development of the field, as well as to identify key publications and researchers.
+	3. Education: Students and educators in computer science and information science can use the CISI collection to learn about the history and development of the field, as well as to identify key publications and researchers.
 
-4. Data analysis: The CISI collection can be used to perform bibliometric analysis, such as examining the citation patterns of authors or identifying trends in research over time.
+	4. Data analysis: The CISI collection can be used to perform bibliometric analysis, such as examining the citation patterns of authors or identifying trends in research over time.
 
-Overall, the CISI collection is a valuable resource for anyone interested in the field of computer science and information science, whether for research, education, or professional development.
+	Overall, the CISI collection is a valuable resource for anyone interested in the field of computer science and information science, whether for research, education, or professional development.
 
-```
+
 
 **QUESTION: What can you tell about the Okapi BM25?**
 
 **ANSWER:**
 
-```
-Okapi BM25 (Best Matching 25) is a widely used ranking function for information retrieval. It was developed as part of the Okapi information retrieval system, which was developed in the 1980s and 1990s by researchers at City University, London.
+	Okapi BM25 (Best Matching 25) is a widely used ranking function for information retrieval. It was developed as part of the Okapi information retrieval system, which was developed in the 1980s and 1990s by researchers at City University, London.
 
-BM25 is a probabilistic retrieval model that estimates the relevance of a document to a query based on the frequency of query terms in the document and the collection as a whole. It is a bag-of-words model, which means that it treats documents and queries as collections of individual words, rather than taking into account the relationships between words.
+	BM25 is a probabilistic retrieval model that estimates the relevance of a document to a query based on the frequency of query terms in the document and the collection as a whole. It is a bag-of-words model, which means that it treats documents and queries as collections of individual words, rather than taking into account the relationships between words.
 
-The BM25 ranking function takes into account three factors: term frequency, inverse document frequency, and document length. The term frequency factor measures how often a query term appears in a document, with more frequent occurrences being assigned a higher weight. The inverse document frequency factor measures how common a term is across the collection, with rarer terms being assigned a higher weight. The document length factor penalizes longer documents, on the assumption that longer documents are less likely to be relevant.
+	The BM25 ranking function takes into account three factors: term frequency, inverse document frequency, and document length. The term frequency factor measures how often a query term appears in a document, with more frequent occurrences being assigned a higher weight. The inverse document frequency factor measures how common a term is across the collection, with rarer terms being assigned a higher weight. The document length factor penalizes longer documents, on the assumption that longer documents are less likely to be relevant.
 
-The values of the parameters in the BM25 ranking function can be tuned to optimize retrieval performance for a particular collection or task. BM25 has been shown to perform well on a wide range of information retrieval tasks, and it is one of the most widely used ranking functions in the field.
+	The values of the parameters in the BM25 ranking function can be tuned to optimize retrieval performance for a particular collection or task. BM25 has been shown to perform well on a wide range of information retrieval tasks, and it is one of the most widely used ranking functions in the field.
 
-Overall, Okapi BM25 is a powerful and widely used ranking function for information retrieval, which has been shown to be effective in a wide range of settings.
-```
+	Overall, Okapi BM25 is a powerful and widely used ranking function for information retrieval, which has been shown to be effective in a wide range of settings.
 
 
 Now, here are some examples of wrong answers provided by ChatGPT:
@@ -107,31 +104,30 @@ Now, here are some examples of wrong answers provided by ChatGPT:
 
 **ANSWER:**
 
-```
-Yes, there are several Python libraries that implement the BM25 ranking function and can be used to apply it to the CISI collection. One such library is the rank_bm25 library, which provides an implementation of BM25 that can be used with Python's scikit-learn library.
+	Yes, there are several Python libraries that implement the BM25 ranking function and can be used to apply it to the CISI collection. One such library is the rank_bm25 library, which provides an implementation of BM25 that can be used with Python's scikit-learn library.
 
-Here's a brief tutorial on how to use rank_bm25 to apply BM25 to the CISI collection:
+	Here's a brief tutorial on how to use rank_bm25 to apply BM25 to the CISI collection:
 
-Install the rank_bm25 library by running the following command in your terminal:
+	Install the rank_bm25 library by running the following command in your terminal:
 
-	pip install rank_bm25
+		pip install rank_bm25
 
-Download the CISI collection from the University of Glasgow's website and extract the files.
+	Download the CISI collection from the University of Glasgow's website and extract the files.
 
 
-Load the CISI collection into Python using the pandas library:
+	Load the CISI collection into Python using the pandas library:
 
-	import pandas as pd
+		import pandas as pd
 
-	# Load the CISI documents
-	docs_df = pd.read_csv('cisi/CISI.ALL', sep='\n', header=None, names=['text'])
+		# Load the CISI documents
+		docs_df = pd.read_csv('cisi/CISI.ALL', sep='\n', header=None, names=['text'])
 
-	# Load the CISI queries
-	queries_df = pd.read_csv('cisi/CISI.QRY', sep='\n', header=None, names=['text'])
+		# Load the CISI queries
+		queries_df = pd.read_csv('cisi/CISI.QRY', sep='\n', header=None, names=['text'])
 
-	# Load the relevance judgments
-	qrels_df = pd.read_csv('cisi/CISI.REL', sep=' ', header=None, names=['query_id', 'Q0', 'doc_id', 'rel'])
-```
+		# Load the relevance judgments
+		qrels_df = pd.read_csv('cisi/CISI.REL', sep=' ', header=None, names=['query_id', 'Q0', 'doc_id', 'rel'])
+
 
 Parsing the CISI files require much more work than showed. Even telling ChatGPT the answer was wrong, the new sample code did not work either.
 
@@ -143,21 +139,21 @@ Other example of wrong information provided by ChatGPT:
 
 **ANSWER:**
 
-```
-The CISI.ALL file in the CISI collection includes a "cross-reference" section at the end of each document, which lists other documents that are cross-referenced by the current document. This section is denoted by the tag XREF and is followed by a list of document numbers, each of which is preceded by the tag D.
 
-For example, here is an excerpt from document 1 in the CISI collection:
+	The CISI.ALL file in the CISI collection includes a "cross-reference" section at the end of each document, which lists other documents that are cross-referenced by the current document. This section is denoted by the tag XREF and is followed by a list of document numbers, each of which is preceded by the tag D.
 
-	.I 1
-	.T
-	experimental investigation of the aerodynamics of a wing in a slipstream .
-	.A
-	brenckman,m.
-	.B
-	journal of basic engineering , march 1967, pp. 39-50 . 
-	.XREF
-	D 960 D 1266 D 1843 D 1956 D 2148
-```
+	For example, here is an excerpt from document 1 in the CISI collection:
+
+		.I 1
+		.T
+		experimental investigation of the aerodynamics of a wing in a slipstream .
+		.A
+		brenckman,m.
+		.B
+		journal of basic engineering , march 1967, pp. 39-50 . 
+		.XREF
+		D 960 D 1266 D 1843 D 1956 D 2148
+
 
 The XREF section format is completely wrong, when comparing to the actual files. This indicates ChatGPT is hallucinating the information, while following the most probable sequence of words/tokens.
 
@@ -169,19 +165,18 @@ After seen such results, all the ChatGPT answers need to be put in perspective: 
 
 **ANSWER:**
 
-```
-The best results achieved on the CISI collection using various information retrieval methods are reported in the literature. Here are some examples of the best results achieved on the CISI collection:
+	The best results achieved on the CISI collection using various information retrieval methods are reported in the literature. Here are some examples of the best results achieved on the CISI collection:
 
-* In a 1973 study by Harman and others, the best result on the CISI test set was achieved using a combination of query expansion and relevance feedback, with a mean average precision (MAP) of 0.365. MAP is a standard evaluation metric for information retrieval that measures the average precision across all queries in the test set.
+	* In a 1973 study by Harman and others, the best result on the CISI test set was achieved using a combination of query expansion and relevance feedback, with a mean average precision (MAP) of 0.365. MAP is a standard evaluation metric for information retrieval that measures the average precision across all queries in the test set.
 
-* In a 1994 study by Robertson and others, the best result on the CISI test set was achieved using a combination of statistical and linguistic techniques, with a MAP of 0.478.
+	* In a 1994 study by Robertson and others, the best result on the CISI test set was achieved using a combination of statistical and linguistic techniques, with a MAP of 0.478.
 
-* In a 1995 study by Turtle and Croft, the best result on the CISI test set was achieved using a language modeling approach, with a MAP of 0.537.
+	* In a 1995 study by Turtle and Croft, the best result on the CISI test set was achieved using a language modeling approach, with a MAP of 0.537.
 
-* In a 2004 study by Zhai and Lafferty, the best result on the CISI test set was achieved using a variant of the language modeling approach called Dirichlet smoothed language modeling, with a MAP of 0.556.
+	* In a 2004 study by Zhai and Lafferty, the best result on the CISI test set was achieved using a variant of the language modeling approach called Dirichlet smoothed language modeling, with a MAP of 0.556.
 
-It's worth noting that these results were achieved using different experimental setups and evaluation metrics, so they may not be directly comparable. Additionally, these results were reported in the literature several years ago and may no longer be the state of the art on the CISI collection. However, they provide some context for the performance that can be achieved on the CISI collection using different information retrieval techniques.
-```
+	It's worth noting that these results were achieved using different experimental setups and evaluation metrics, so they may not be directly comparable. Additionally, these results were reported in the literature several years ago and may no longer be the state of the art on the CISI collection. However, they provide some context for the performance that can be achieved on the CISI collection using different information retrieval techniques.
+
 
 Do those reference really exists? If so, do they reach the exactly performance mentioned?
 
