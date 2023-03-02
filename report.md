@@ -15,7 +15,7 @@ Having no previous experience on BM25 ranking function, nor with the CISI collec
 
 ### Parsing CISI files
 
-Most of the implementation effort was dedicated to parsing the CISI collection data, especially the ones containing the documents collection and the queries (CISI.ALL and CISI.QRY respectively) which shared the same format. For that task the ChatGPT interaction proved ineffective, as the both the source code provided, as well as the files format details were incorrect. Check the [ChatGPT usage](#Using-ChatGPT) for more information. To implement the CISI files parsing, details provided by the [Kaggle](https://www.kaggle.com/datasets/dmaso01dsta/cisi-a-dataset-for-information-retrieval) were considered.
+Most of the implementation effort was dedicated to parsing the CISI collection data, especially the ones containing the documents collection and the queries (CISI.ALL and CISI.QRY respectively) which shared the same format. For that task the ChatGPT interaction proved ineffective, as the both the source code provided, as well as the files format details were incorrect. Check the [Using ChatGPT](#Using-ChatGPT) section for more information. To implement the CISI files parsing, details provided by the [Kaggle](https://www.kaggle.com/datasets/dmaso01dsta/cisi-a-dataset-for-information-retrieval) were considered.
 
 
 ### Preprocessing the CISI files
